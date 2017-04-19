@@ -1,26 +1,14 @@
 
-class StandardBill {
+object StandardBill {
 
-}
+  type Price = Double
+  val items = Map[String, Price]("Cola" -> 0.5, "Coffee" -> 1.0, "Cheese Sandwich" -> 2.0, "Steak Sandwhich" -> 4.5)
 
-sealed trait Orders {
-  def value: Double
-}
-case object Cola extends Orders {
-  override def value = 0.4
-}
-
-case object Coffee extends Orders {
-  override def value = 1.0
+  def apply(orders: List[String]): Double = {
+    0.0
+  }
 }
 
-case object CheeseSandwich extends Orders {
-  override def value = 2.0
-}
-
-case object SteakSandwich extends Orders {
-  override def value = 4.5
-}
 
 
 
