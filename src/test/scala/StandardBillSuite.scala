@@ -6,4 +6,8 @@ class StandardBillSuite extends FlatSpec with Matchers {
     val sum = List(0.5, 1.0, 2.0).sum
     sum should be (3.5)
   }
+
+  it should "return 0 for empty List" in {
+
+  }
 }
