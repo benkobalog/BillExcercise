@@ -8,6 +8,10 @@ class StandardBillSuite extends FlatSpec with Matchers {
   }
 
   it should "return 0 for empty List" in {
+    val orders = List()
+  }
 
+  it should "handle non existent items" in {
+    val orders = List("Pug family", "Cola")
   }
 }
